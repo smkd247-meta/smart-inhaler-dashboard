@@ -143,10 +143,13 @@ export default defineConfig({
 
   envDir: __dirname,
 
-  build: {
+	build: {
+    rollupOptions: {
+      input: path.resolve(__dirname, "client/index.html"),
+    },
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
-  },
+    },
 
   server: {
     port: 3000,
