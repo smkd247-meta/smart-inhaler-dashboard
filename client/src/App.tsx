@@ -1,5 +1,5 @@
 import { Toaster } from "sonner";
-import NotFound from "@/pages/NotFound";
+import NotFound from "./pages/NotFound";
 import { Route, Switch, Redirect } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
